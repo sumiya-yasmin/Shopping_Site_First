@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Lato", sans-serif ;
+    transition: all .5s ease;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px 0 60px;
+    background-color: rgb(221,221,221);
+
+}
+.navbar a{
+    color:rgb(99,99,99);
+}
+.side-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+a.active{
+    color: tomato;
+}
+  
+

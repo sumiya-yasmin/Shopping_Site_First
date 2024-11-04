@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Lato", sans-serif ;
+    transition: all .5s ease;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px 0 60px;
+    background-color: rgb(221,221,221);
+    padding-bottom: 15px;
+
+}
+.shopper{
+    text-transform: uppercase;
+}
+.navbar a{
+    color:rgb(99,99,99);
+
+}
+
+.navbar a:hover{
+    color: tomato;
+}
+
+.side-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+a.active{
+    color: tomato;
+}
+.text-main-contact-sec h1,.text-main-contact-sec p,.form-section h1,.form-section p {
+    text-align:left;
+    line-height: 2;
+}
+.main-contact-sec h1, .form-section h1{
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+.main-contact-sec p,.form-section p {
+    font-size: 1.5rem;
+    
+}
+.img-main-contact-sec{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: rgb(233,233,233);
+    margin-top: 100px;
+    
+}
+.img-main-contact-sec p{
+    font-weight: 600;
+}
+
+.main-contact-sec, .form-section{
+    width:60%;
+    margin: 100px auto;
+    
+}
+/* .form-section h1,p{
+    text-align:center;
+    line-height: 2;
+
+}
+.form-section h1{
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+.form-section p{
+    font-size: 1.5rem;
+}
+ */
+
+footer{
+    padding: 30px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+}
+form{
+    display: flex;
+    flex-direction:column ;
+    margin-top: 50px;
+    gap: 30px;
+}
+input, textarea{
+    display: block;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    width: 60%;
+}
+
+input:focus, textarea:focus{
+    outline: none; 
+}
+
+
+.btn-submit{
+    width: 15%;
+    padding: 30px 15px;
+    font-size: 1.5rem;
+    box-shadow: 5px 5px rgba(0,0,0);
+    background-color: white;
+}
+.btn-submit:hover{
+    cursor: pointer;
+    border-color: white;
+    color: white;
+    background-color: black;
+    box-shadow: 5px 5px rgb(0,0,0);
+}

@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Lato", sans-serif ;
+    transition: all .5s ease;
+    user-select: none;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+
+}
+.menu{
+    display: none;
+    font-size: 1.7rem;
+}
+.navbar a{
+    color:rgb(99,99,99);
+    font-weight: 700;
+}
+.navbar a:hover{
+    color: tomato;
+}
+
+.shoppers{
+    text-transform: uppercase;
+}
+.side-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.showcase{
+    padding: 20px 60px 0 60px;
+    background-color: rgb(221,221,221);
+}
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px;
+}
+.hero-left h1, .hero-left h3{
+    text-transform:uppercase;
+    letter-spacing: 20px;
+    line-height: 1.4;
+}
+.button{
+    padding: 15px 30px;
+    background-color: rgb(236, 51, 18);
+    border: none;
+    cursor: pointer;
+    box-shadow: 10px 10px 24px black;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+}
+.hero-left h1{
+    font-size: 3rem;
+}
+.hero-left h3{
+    font-size: 2rem;
+}
+.button:hover{
+    background-color: tomato;
+    color: rgb(0, 0, 0);
+    transform: scale(1.2); 
+    /* We could also increase padding instead transform */
+}
+a.active{
+    color: tomato;
+}
+.main-left, .main-right{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    background-color: rgb(221,221,221);
+    padding: 10px 70px;
+    width: 550px; 
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 80px;
+    padding: 50px 100px;
+}
+.left-text, .right-text{
+    line-height: 1.2;
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+.main-button{
+    margin-top: 30px;
+}
+.button-main{
+    color: rgb(128,128,128);
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+}
+.grey-text{
+    color: grey;
+}
+.button-main:hover{
+    cursor: pointer;
+    color: tomato;
+}
+
+.main-left:hover,.main-right:hover{
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);
+    cursor:pointer;
+    transform: scale(1.02);
+    
+}
+/* Featured Section */
+.featured{
+    margin-top: 100px;
+}
+.featured h1, h4{
+    text-align: center;
+    text-transform: capitalize;
+}
+.featured h1{
+    line-height: 1.5;
+}
+
+.featured h4{
+    margin-top: 10px;
+    color: grey;
+}
+.featured h4:hover{
+    color: tomato;
+    cursor: pointer;
+}
+.featured-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 50px auto;
+   
+}
+
+ /* .featured-list{
+    display: flex;
+    justify-content:center;
+    gap: 80px;
+
+
+} */
+
+.featured-list a{
+    border: none;
+    color: tomato;
+    background-color:rgb(221,221,221) ;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+.featured-list a:hover, .card:hover{
+    transform: scale(1.02);
+    box-shadow:0px 15px 30px rgba(0,0,0,0.5);
+}
+
+
+.card{
+    width: 250px;
+    background-color:rgb(207, 207, 207);
+    padding: 10px 10px;
+
+
+
+}
+.img-card img{
+    width: 100%;
+}
+.mouse img,.monitor img, .headphone img{
+    height: 250px ;
+    object-fit:contain;
+
+}
+
+
+.card h2,.card p{
+    text-align: center;
+    vertical-align: bottom;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 30px 100px;
+    margin-top: 50px;
+    
+}
+
+.comment img{
+    width: 20%;
+    border-radius: 50%;
+}
+.comment{
+    display: flex;
+    gap: 20px;
+    align-items:center;
+    justify-content: center;
+    padding: 15px;
+    background-color:rgb(233,233,233);
+}
+.review{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:30px;
+    padding: 5px 10px;
+    /* margin:70px; */
+}
+
+.reviews h1{
+    text-align: center;
+    line-height: 3;
+    margin-bottom: 40px;
+}
+
+.reviews{
+    width: 80%;
+ margin: 100px auto;
+}
+footer{
+    padding: 30px;
+    text-align: center;
+    background-color: black;
+    color: white;
+   
+}
+
+@media(max-width:767px){
+.menu{
+    display: block;
+}
+.side-nav{
+    display: none;
+}
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.hero-img{
+    margin-top: 100px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.featured-list{
+    gap: 50px;
+}
+.cards{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.card{
+    width: 60vw;
+    height: auto:
+}
+.featured{
+    padding: 0;
+}
+.review{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+}
